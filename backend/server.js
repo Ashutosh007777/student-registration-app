@@ -15,6 +15,6 @@ app.use(express.json());
 app.use("/api", authRoutes);
 app.use("/api", regRoutes);
 
-app.listen(process.env.PORT, () =>
-  console.log("Backend running on port", process.env.PORT)
-);
+// Use Render's port OR fallback to local port
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, () => console.log("Backend running on port", PORT));
