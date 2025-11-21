@@ -1,0 +1,42 @@
+<h2>Dashboard</h2>
+
+<form id="courseForm">
+  <label>Department</label>
+  <select name="department">
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+    <option value="ECE">ECE</option>
+  </select>
+
+  <label>Semester</label>
+  <select name="semester">
+    <option value="1">Sem 1</option>
+    <option value="2">Sem 2</option>
+    <option value="3">Sem 3</option>
+  </select>
+
+  <label>Course</label>
+  <select name="course">
+    <option value="DSA">DSA</option>
+    <option value="DBMS">DBMS</option>
+    <option value="AI">AI</option>
+  </select>
+
+  <button type="submit">Submit</button>
+</form>
+
+<h2>Your Courses</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Semester</th>
+      <th>Department</th>
+      <th>Course</th>
+      <th>Registered At</th>
+    </tr>
+  </thead>
+  <tbody id="regTableBody"></tbody>
+</table>
+
+<script src="js/dashboard.js"></script>
